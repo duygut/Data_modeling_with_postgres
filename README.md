@@ -69,40 +69,8 @@ Star Schema has been created for queries on song play analysis.
 ## 3. Project Steps
 
 1. SQL queries such as 'DROP TABLE', 'CREATE TABLE', 'INSERT INTO' have been created in `sql_queries.py` file. PRIMARY key has ben defined for each table. Avoid the duplicate row error, `ON CONFLICT (id) DO NOTHING` has been added. 
-| songplay_table_create = (""" CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, 	|
-|-	|
-| start_time TIMESTAMP, 	|
-| user_id VARCHAR, 	|
-| level VARCHAR, 	|
-| song_id VARCHAR, 	|
-| artist_id VARCHAR, 	|
-| session_id VARCHAR, 	|
-| location VARCHAR, 	|
-| user_agent VARCHAR); 	|
-| """) 	|
 
 2. Run `create_tables.py` to reset the tables before each time to run ETL scripts
-
-| def create_database():                                                                    |
-|-------------------------------------------------------------------------------------------|
-| """                                                                                       |
-| - Creates and connects to the sparkifydb                                                  |
-| - Returns the connection and cursor to sparkifydb                                         |
-| """                                                                                       |
-| # connect to default database                                                             |
-| conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")  |
-| conn.set_session(autocommit=True)                                                         |
-| cur = conn.cursor()                                                                       |
-| # create sparkify database with UTF8 encoding                                             |
-| cur.execute("DROP DATABASE IF EXISTS sparkifydb")                                         |
-| cur.execute("CREATE DATABASE sparkifydb WITH ENCODING 'utf8' TEMPLATE template0")         |
-| # close connection to default database                                                    |
-| conn.close()                                                                              |
-| # connect to sparkify database                                                            |
-| conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student") |
-| cur = conn.cursor()                                                                       |
-| return cur, conn                                                                          |
-
 
 3. With `etl.ipynb` notebook, single file from `song_data` and `log_data` have been read and ETL has been processed. 
 Song Data:
