@@ -87,14 +87,6 @@ Log Data:
 | 4 | Mr Oizo | Logged In |    Kaylee |      F |             3 |  Summers | 144.03873 |  free | Phoenix-Mesa-Scottsdale, AZ |    PUT | NextSong | 1540344794796 |       139 |      Flat 55 |    200 | 1541106352796 | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebK... |      8 |
 
 4. Run `test.ipynb` file to test schema and pipeline
-Song Play
-| songplay_id |                 start_time | user_id | level | song_id | artist_id | session_id |                    location |                                                                                                      user_agent |
-|------------:|---------------------------:|--------:|------:|--------:|----------:|-----------:|----------------------------:|----------------------------------------------------------------------------------------------------------------:|
-|           1 | 2018-11-01 21:01:46.796000 |       8 |  free |    None |      None |        139 | Phoenix-Mesa-Scottsdale, AZ | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" |
-|           2 | 2018-11-01 21:05:52.796000 |       8 |  free |    None |      None |        139 | Phoenix-Mesa-Scottsdale, AZ | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" |
-|           3 | 2018-11-01 21:08:16.796000 |       8 |  free |    None |      None |        139 | Phoenix-Mesa-Scottsdale, AZ | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" |
-|           4 | 2018-11-01 21:11:13.796000 |       8 |  free |    None |      None |        139 | Phoenix-Mesa-Scottsdale, AZ | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" |
-|           5 | 2018-11-01 21:17:33.796000 |       8 |  free |    None |      None |        139 | Phoenix-Mesa-Scottsdale, AZ | "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" |
 
 User
 
