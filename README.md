@@ -73,10 +73,12 @@ Star Schema has been created for queries on song play analysis.
 2. Run `create_tables.py` to reset the tables before each time to run ETL scripts
 
 3. With `etl.ipynb` notebook, single file from `song_data` and `log_data` have been read and ETL has been processed. 
+
 Song Data:
 |          artist_id | artist_latitude | artist_location | artist_longitude | artist_name |  duration | num_songs |            song_id |            title | year |
 |-------------------:|----------------:|----------------:|-----------------:|------------:|----------:|----------:|-------------------:|-----------------:|-----:|
 | ARD7TVE1187B99BFB1 |             NaN | California - LA |              NaN |      Casual | 218.93179 |         1 | SOMZWCG12A8C13C480 | I Didn't Mean To |    0 |
+
 
 Log Data:
 |   |  artist |      auth | firstName | gender | itemInSession | lastName |    length | level |                    location | method |     page |  registration | sessionId |         song | status |            ts |                                         userAgent | userId |
